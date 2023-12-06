@@ -49,7 +49,8 @@ const Feed = () => {
       {posts.length > 0 ? <PromptCardList
         data={posts}
         handleTagClick={() => { }}
-      /> : <></>}
+      /> : <div className="mt-16 prompt_layout">
+        <div className="prompt_card_empty"></div><div className="prompt_card_empty"></div><div className="prompt_card_empty"></div></div>}
 
     </section>
   )
